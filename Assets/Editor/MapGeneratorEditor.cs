@@ -11,9 +11,9 @@ public class MapGeneratorEditor : Editor
         MapGenerator mapGenerator = (MapGenerator)target;
         if (DrawDefaultInspector())
         {
-            if (mapGenerator.autoUpdate) mapGenerator.GenerateMap();
+            if (mapGenerator.autoUpdate) mapGenerator.DrawMapInEditor();
         }
         
-        if(GUILayout.Button("Generate")) mapGenerator.GenerateMap();
+        if(GUILayout.Button("Generate")) mapGenerator.DrawMapInEditor();
     }
 }
